@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PromptForge AI Pro — ₹50 / 3 months</title>
+    <style>
+      :root { --violet:#8b5cf6; --cyan:#22d3ee; --bg:#0b0b18; --card:#14152e; --text:#f4f5fb; --dim:#aab0c6; }
+      * { box-sizing: border-box; margin: 0; }
+      body { font-family: 'Inter', system-ui, sans-serif; color: var(--text);
+        background: radial-gradient(800px 400px at 50% -10%, rgba(139,92,246,.3), transparent 60%), var(--bg);
+        min-height: 100vh; display: grid; place-items: center; padding: 24px; }
+      .card { width: 100%; max-width: 440px; background: var(--card); border: 1px solid rgba(255,255,255,.12);
+        border-radius: 20px; padding: 30px; box-shadow: 0 24px 60px rgba(0,0,0,.5); }
+      .logo { width: 52px; height: 52px; border-radius: 14px; display: grid; place-items: center; margin-bottom: 16px;
+        background: linear-gradient(135deg, #8b5cf6, #6366f1 50%, #22d3ee); }
+      h1 { font-size: 22px; margin-bottom: 6px; }
+      .price { font-size: 28px; font-weight: 800; margin: 14px 0 4px;
+        background: linear-gradient(90deg,#fff,#9ce8f5); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+      .sub { color: var(--dim); font-size: 13px; margin-bottom: 20px; }
+      ul { list-style: none; margin: 18px 0; display: flex; flex-direction: column; gap: 10px; }
+      li { font-size: 14px; }
+      input { width: 100%; padding: 13px; border-radius: 11px; border: 1px solid rgba(255,255,255,.15);
+        background: rgba(0,0,0,.3); color: var(--text); font-size: 14px; margin-bottom: 12px; }
+      button { width: 100%; padding: 14px; border: none; border-radius: 12px; cursor: pointer; font-weight: 700;
+        font-size: 15px; color: #fff; background: linear-gradient(135deg, #8b5cf6, #6366f1 50%, #22d3ee); }
+      button:hover { filter: brightness(1.08); }
+      #status { font-size: 13px; margin-top: 14px; min-height: 18px; color: var(--dim); line-height: 1.5; }
+      .foot { font-size: 11px; color: #767c95; margin-top: 18px; text-align: center; }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="logo">
+        <svg width="28" height="28" viewBox="0 0 24 24"><path d="M13 2 4 13h6l-1 9 9-11h-6l1-9z" fill="#fff"/></svg>
+      </div>
+      <h1>PromptForge AI Pro</h1>
+      <div class="price">₹50 <span style="font-size:15px;color:var(--dim);font-weight:600">/ 3 months</span></div>
+      <div class="sub">Unlimited AI Boost · unlimited history · priority access</div>
+
+      <ul>
+        <li>✨ Unlimited AI Boost (Free: 1/day)</li>
+        <li>🗂️ Unlimited prompt history</li>
+        <li>🚀 Priority access to new features</li>
+      </ul>
+
+      <input id="buyer-email" type="email" placeholder="you@email.com — your code is emailed here" />
+      <button id="buy-btn">Subscribe — ₹50 / 3 months</button>
+      <div id="status"></div>
+
+      <div class="foot">Secure payment by Razorpay. Your 6-digit activation code is emailed instantly.</div>
+    </div>
+
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script src="checkout.js"></script>
+  </body>
+</html>
