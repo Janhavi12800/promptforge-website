@@ -5,7 +5,7 @@
 //   1. RAZORPAY_KEY_ID — Razorpay Dashboard → Settings → API Keys (rzp_test_… then rzp_live_…)
 //   2. WORKER_URL      — your deployed Cloudflare Worker URL
 
-const RAZORPAY_KEY_ID = 'rzp_test_T3OEdDHyT06xvw';
+const RAZORPAY_KEY_ID = 'rzp_live_T1ALXI1GZ9zE9Y';
 const WORKER_URL = 'https://promptforge-backend.janhavirawat25.workers.dev/';
 const PRICE_RUPEES = 50;
 
